@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form class = "addMovieForm";autocomplete="off" >
+                    <div>
+                        <label> Movie Name</label>
+                        <input type="text" name="movieName" id="movieName">
+                    </div>
+                    <div>
+                        <label> Movie Director</label>
+                        <input type="text" name="movieDirector" id="movieDirector">
+                    </div>
+                    <div>
+                        <label> Movie Rating</label>
+                        <select id="movieRating" name="movieRating" >
+                            <option value="U">U</option>
+                            <option value="PG">PG</option>
+                            <option value="12A">12A</option>
+                            <option value="15">15</option>
+                            <option value="18">18</option>
+                            <option value="NR">NR</option>
+                          </select>
+                    </div>
+                    <div>
+                        <label> Movie Length</label>
+                        <input type="number" min="1" max="1000" name="movieLength" id= "movieLength">
+                    </div>
+                    <div>
+                        <label> Year Of Release</label>
+                        <input type="number"  min="1888" max="2021 "name="yearOfRelease" id="yearOfRelease">
+                    </div>
+                    <button type= "submit" class="btn">Submit Post</button>                                 
+                </form>
+
+                <div class="movie-list row"></div>
+            </td>
+            
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
